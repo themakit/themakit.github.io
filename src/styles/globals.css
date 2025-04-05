@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --link-color: #0066cc;
+  --link-color-hover: #004999;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --link-color: #4a90e2;
+  }
+}
+
+html.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --link-color: #4a90e2;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Lexend', sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  font-family: 'Lexend', sans-serif;
+}
+
+button {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 700;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  border: none;
+  cursor: pointer;
+  margin: 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--link-color-hover);
+}
+
+button.rounded-full {
+  border-radius: 9999px;
+}
+
+button.text-xl {
+  font-size: 1.25rem;
+}
+
+button.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+button.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+button.text-lg {
+  font-size: 1rem;
+}
+
+button.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+button.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+button.bg-transparent {
+  background-color: transparent;
+  border: 2px solid var(--link-color);
+  color: var(--link-color);
+}
+
+button.bg-transparent:hover {
+  background-color: var(--link-color);
+  color: white;
+}
+
+button svg {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+button + button {
+  margin-left: 0;
+  margin-top: 1rem;
+}
+
+@media (min-width: 640px) {
+  button + button {
+    margin-left: 1.5rem;
+    margin-top: 0;
+  }
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  font-weight: 100;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--link-color-hover);
+}
+
+code, pre {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #f5f5f5;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+}
+
+pre {
+  overflow-x: auto;
+  background-color: #f5f5f5;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+html.dark pre {
+  background-color: #2d2d2d;
+  color: #f5f5f5;
+  border-color: #444;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  flex: 1;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.gap-md {
+  gap: 20px;
+}
+
+.gap-lg {
+  gap: 40px;
+}
+
+
+.hero {
+  background: linear-gradient(to right, #3b82f6, #9333ea);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+.hero button {
+  padding: 12px 24px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  background-color: white;
+  color: #3b82f6;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.hero button:hover {
+  background-color: #f3f4f6;
+  transform: scale(1.05);
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+footer a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: var(--link-color-hover);
+}
+
+footer .space-x-8 > * {
+  margin-right: 2rem; /* Add spacing between footer links */
+}
+
+footer .space-x-8 > *:last-child {
+  margin-right: 0; /* Remove margin for the last link */
+}
