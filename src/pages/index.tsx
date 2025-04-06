@@ -9,24 +9,18 @@ export default function Home() {
         <title>ThemaKit – Build Stunning Interfaces</title>
       </Head>
       <Layout>
-        <section className="relative bg-gradient-to-r from-blue-500 to-purple-600 text-white text-center py-20">
+        <section className="relative bg-gradient-to-r from-[#2ec4b6] to-[#1b9a8a] text-white text-center py-20">
           <div className="max-w-4xl mx-auto px-4">
-            <h1 className="text-6xl font-extrabold mb-6">ThemaKit</h1>
+            <h1 className="text-7xl font-extrabold mb-6">ThemaKit</h1>
             <p className="text-2xl font-light mb-8">
               Build beautiful, consistent interfaces with ease.
             </p>
             <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6 mt-4">
               <button
-                className="flex items-center justify-center px-12 py-6 bg-blue-600 text-white font-bold rounded-full text-xl hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 shadow-lg transition-transform transform hover:scale-105"
+                className="flex items-center justify-center px-10 py-4 bg-[#2ec4b6] text-white font-medium rounded-full text-lg hover:bg-[#1b9a8a] focus:outline-none focus:ring-2 focus:ring-[#2ec4b6] shadow-sm transition-transform transform hover:scale-105"
                 aria-label="Get started with ThemaKit"
               >
                 Get Started
-              </button>
-              <button
-                className="flex items-center justify-center px-10 py-4 bg-transparent border-2 border-blue-600 text-blue-600 font-medium rounded-full text-lg hover:bg-blue-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-300 shadow-sm transition-transform transform hover:scale-105"
-                aria-label="Learn more about ThemaKit"
-              >
-                Learn More
               </button>
             </div>
           </div>
@@ -52,7 +46,7 @@ export default function Home() {
             </p>
             <div className="flex justify-center">
               <button
-                className="px-10 py-4 bg-blue-600 text-white font-semibold rounded-full text-lg hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300"
+                className="px-10 py-4 bg-[#2ec4b6] text-white font-semibold rounded-full text-lg hover:bg-[#1b9a8a] focus:outline-none focus:ring-4 focus:ring-[#2ec4b6]"
                 aria-label="Start using ThemaKit now"
               >
                 Start Now
