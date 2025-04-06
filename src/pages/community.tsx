@@ -18,19 +18,7 @@ export default function Community() {
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 text-center">
             <h3 className="text-xl font-semibold mb-4">Discord Server</h3>
             <p className="text-sm text-gray-600 dark:text-gray-300">
-              Join real-time conversations and get help instantly.
-            </p>
-          </div>
-          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 text-center">
-            <h3 className="text-xl font-semibold mb-4">Workshops</h3>
-            <p className="text-sm text-gray-600 dark:text-gray-300">
-              Attend live workshops to enhance your skills.
-            </p>
-          </div>
-          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 text-center">
-            <h3 className="text-xl font-semibold mb-4">Blog</h3>
-            <p className="text-sm text-gray-600 dark:text-gray-300">
-              Read tutorials and best practices from our team.
+              Join real-time conversations and get help.
             </p>
           </div>
         </div>
