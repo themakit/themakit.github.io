@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>ThemaKit – Build Stunning Interfaces</title>
+        <title>ThemaKit</title>
       </Head>
       <Layout>
         <section className="relative bg-gradient-to-r from-[#2ec4b6] to-[#1b9a8a] text-white text-center py-20">
