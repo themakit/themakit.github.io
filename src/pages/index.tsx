@@ -2,8 +2,13 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Layout from '../components/Layout';
 import FeatureCard from '../components/FeatureCard';
+import { useEffect } from 'react';
 
 export default function Home() {
+  useEffect(() => {
+    document.cookie = "monster=C is for cookie that's good enough for me.; path=/; max-age=3600";
+  }, []);
+
   return (
     <>
       <Head>
