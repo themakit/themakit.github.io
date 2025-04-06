@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import Layout from '../components/Layout';
 import FeatureCard from '../components/FeatureCard';
 
@@ -16,9 +17,14 @@ export default function Home() {
               Build beautiful, consistent interfaces with ease.
             </p>
             <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6 mt-4">
-              <a href="/docs/getting-started/installation" className="flex items-center justify-center px-10 py-4 bg-[#2ec4b6] text-white font-medium rounded-full text-lg hover:bg-[#1b9a8a] focus:outline-none focus:ring-2 focus:ring-[#2ec4b6]" aria-label="Get started with ThemaKit">
-                Get Started
-              </a>
+              <Link href="/docs/getting-started/installation" passHref>
+                <button
+                  className="flex items-center justify-center px-10 py-4 bg-[#2ec4b6] text-white font-medium rounded-full text-lg hover:bg-[#1b9a8a] focus:outline-none focus:ring-2 focus:ring-[#2ec4b6] shadow-sm transition-transform transform hover:scale-105"
+                  aria-label="Get started with ThemaKit"
+                >
+                  Get Started
+                </button>
+              </Link>
             </div>
           </div>
         </section>
